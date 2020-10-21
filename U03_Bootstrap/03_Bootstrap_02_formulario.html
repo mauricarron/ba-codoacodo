@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <title>03_Bootstrap_02_formulario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <form class="container mt-5">
+      <div class="form-row">
+        <div class="col">
+          <div class="form-group">
+            <label for="nombre">Nombre de Pila</label>
+            <input type="text" id="nombre" class="form-control" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" class="form-control" />
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="usuario">Nombre de Usuario</label>
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text">@</span>
+          </div>
+          <input
+            type="text"
+            id="usuario"
+            class="form-control"
+            placeholder="Nombre de Usuario"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email"
+          >Direccion de Email <span class="text-muted">(Opcional)</span></label
+        >
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          placeholder="you@example.com"
+        />
+      </div>
+      <div class="form-group">
+        <label for="domicilio-1"
+          >Domicilio <span class="text-muted">(Opcional)</span></label
+        >
+        <input
+          type="text"
+          id="domicilio-1"
+          class="form-control"
+          placeholder="Av. Chacabuco 993"
+        />
+      </div>
+      <div class="form-group">
+        <label for="domicilio-2"
+          >Domicilio 2 <span class="text-muted">(Opcional)</span></label
+        >
+        <input
+          type="text"
+          id="domicilio-2"
+          class="form-control"
+          placeholder="Apartamento o Suite"
+        />
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="pais">País</label>
+          <select id="pais" class="form-control">
+            <option value="" selected>Elegir un país</option>
+            <option value="ar">Argentina</option>
+            <option value="mx">México</option>
+            <option value="cl">Chile</option>
+          </select>
+        </div>
+        <div class="form-group col-md-4">
+          <label for="provincia">Provincia</label>
+          <select id="provincia" class="form-control">
+            <option value="" selected>Elegir una provincia</option>
+            <option>...</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="codigo-postal">Código Postal</label>
+          <input type="text" class="form-control" id="codigo-postal" />
+        </div>
+      </div>
+      <hr />
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="termino-1" />
+        <label class="form-check-label" for="termino-1">
+          La dirección de envio es la misma que mi dirección de facturación
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="termino-2" />
+        <label class="form-check-label" for="termino-2">
+          Guarde esta información para la próxima vez
+        </label>
+      </div>
+      <hr />
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </body>
+</html>

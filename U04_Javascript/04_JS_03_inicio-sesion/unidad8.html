@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Inicio Sesión | Javascript Unidad 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h1>Ingreso al Sistema</h1>
+    <form onsubmit="comprobarFormulario()">
+      <label for="usuario">Usuario </label>
+      <input type="text" name="usuario" id="usuario" /><br />
+      <label for="pass">Clave </label>
+      <input type="password" name="pass" id="pass" /><br />
+      <input type="submit" id="submit" value="Ingresar" />
+    </form>
+    <script>
+      const usuario = document.querySelector("#usuario");
+      const pass = document.querySelector("#pass");
+      const btnIngresar = document.querySelector("#submit");
+
+      function comprobarFormulario() {
+        if (usuario.value.trim().length === 0) {
+          return alert("El campo de Usuario esta vacio");
+        }
+
+        if (usuario.value.indexOf("@") === -1) {
+          return alert("El campo de Usuario necesita tener un arroba (@)");
+        }
+
+        if (pass.value.trim().length === 0) {
+          return alert("El campo de Clave esta vacio");
+        }
+      }
+    </script>
+  </body>
+</html>
