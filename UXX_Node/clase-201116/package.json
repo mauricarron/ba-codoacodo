@@ -1,0 +1,19 @@
+{
+  "name": "clase-201116",
+  "version": "1.0.0",
+  "description": "Proyecto de prueba con node + express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "js"
+  ],
+  "author": "mdcarron",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
